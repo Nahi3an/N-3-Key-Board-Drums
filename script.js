@@ -38,5 +38,27 @@ function soundOn(e) {
 const keys = document.querySelectorAll(".part");
 //Handling the event for Transition end
 keys.forEach((key) => key.addEventListener("transitionend", removeStyle));
+
 //handling the event of key press
 window.addEventListener("keydown", soundOn);
+
+for (let i = 0; i < keys.length; i++) {
+  keys[i].addEventListener("click", clickSound);
+  function clickSound() {
+    const keyIndex = i;
+    const key = document.getElementById(keys[i].id);
+
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(match);
+
+    function match(item, index) {
+      if (keyIndex == index) {
+        console.log(item.id);
+        const audio = document.getElementById(item.id);
+        audio.currentTime = 0;
+        audio.play();
+        key.classList.add("playing");
+      }
+    }
+  }
+}
