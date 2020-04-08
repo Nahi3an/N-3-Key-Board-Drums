@@ -26,18 +26,18 @@ header h2 {
     margin-top: 2%;
 }
 
-.part {
+.part {}
+
+button {
     border: 3px solid;
-    margin: 10px;
+    margin-right: 15px;
     padding: 15px;
-    /* border-radius: 5px; */
-    /* width: 47px; */
-    width: 100px;
-    height: 80px;
+    width: 140px;
     color: whitesmoke;
     border-radius: 5px;
     font-weight: bold;
     transition: all .07s;
+    background: none;
 }
 
 .playing {
@@ -46,12 +46,14 @@ header h2 {
     box-shadow: 0 0 10px #817777;
 }
 
-.part kbd {
-    font-size: 38px;
+button kbd {
+    font-size: 40px;
+    padding-bottom: 2px;
+    /* margin: 0px auto; */
 }
 
 .label {
-    font-size: 23px;
+    font-size: 17px;
     color: #ffd700;
-    font-weight: 100;
+    font-weight: 500;
 }
