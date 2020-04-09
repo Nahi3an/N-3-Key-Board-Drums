@@ -38,6 +38,10 @@ button {
     font-weight: bold;
     transition: all .07s;
     background: none;
+    -ms-touch-action: manipulation;
+    /* IE10  */
+    touch-action: manipulation;
+    /* IE11+ */
 }
 
 .playing {
