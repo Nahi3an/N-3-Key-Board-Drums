@@ -18,60 +18,63 @@
     <link rel="icon" href="./images/icons8-drum-set-96.png" />
   </head>
   <body>
-    <header>
-      <h1>N-3 Drum Kit</h1>
-      <h2>[ Click or Press The Key Board Keys]</h2>
-    </header>
-    <div class="parts">
-      <button data-key="65" class="part" id="part-1">
-        <kbd>A</kbd><br />
-        <span class="label">CLAP</span>
-      </button>
-      <button data-key="83" class="part" id="part-2">
-        <kbd>S</kbd><br />
-        <span class="label">HI-HAT</span>
-      </button>
-      <button data-key="32" class="part" id="part-3">
-        <kbd>Space</kbd><br />
-        <span class="label">KICK</span>
-      </button>
-      <button data-key="70" class="part" id="part-4">
-        <kbd>F</kbd><br />
-        <span class="label">OPEN HAT</span>
-      </button>
-      <button data-key="71" class="part" id="part-5">
-        <kbd>G</kbd><br />
-        <span class="label">BOOM</span>
-      </button>
-      <button data-key="72" class="part" id="part-6">
-        <kbd>H</kbd><br />
-        <span class="label">RIDE</span>
-      </button>
-      <button data-key="74" class="part" id="part-7">
-        <kbd>J</kbd><br />
-        <span class="label">SNARE</span>
-      </button>
-      <button data-key="75" class="part" id="part-8">
-        <kbd>K</kbd><br />
-        <span class="label">TOM</span>
-      </button>
-      <button data-key="76" class="part" id="part-9">
-        <kbd>L</kbd><br />
-        <span class="label">TINK</span>
-      </button>
+    <div class="main">
+      <header>
+        <h1>N-3 Drum Kit</h1>
+        <h2>[ Click or Press The Key Board Keys]</h2>
+      </header>
+      <div class="parts">
+        <button data-key="65" class="part" id="part-1">
+          <kbd>A</kbd><br />
+          <span class="label">CLAP</span>
+        </button>
+        <button data-key="83" class="part" id="part-2">
+          <kbd>S</kbd><br />
+          <span class="label">HI-HAT</span>
+        </button>
+        <button data-key="32" class="part" id="part-3">
+          <kbd>Space</kbd><br />
+          <span class="label">KICK</span>
+        </button>
+        <button data-key="70" class="part" id="part-4">
+          <kbd>F</kbd><br />
+          <span class="label">OPEN HAT</span>
+        </button>
+        <button data-key="71" class="part" id="part-5">
+          <kbd>G</kbd><br />
+          <span class="label">BOOM</span>
+        </button>
+        <button data-key="72" class="part" id="part-6">
+          <kbd>H</kbd><br />
+          <span class="label">RIDE</span>
+        </button>
+        <button data-key="74" class="part" id="part-7">
+          <kbd>J</kbd><br />
+          <span class="label">SNARE</span>
+        </button>
+        <button data-key="75" class="part" id="part-8">
+          <kbd>K</kbd><br />
+          <span class="label">TOM</span>
+        </button>
+        <button data-key="76" class="part" id="part-9">
+          <kbd>L</kbd><br />
+          <span class="label">TINK</span>
+        </button>
+      </div>
+
+      <div class="sounds">
+        <audio id="sound-1" data-key="65" src="./sounds/clap.wav"></audio>
+        <audio id="sound-2" data-key="83" src="./sounds/hihat.wav"></audio>
+        <audio id="sound-3" data-key="32" src="./sounds/kick.wav"></audio>
+        <audio id="sound-4" data-key="70" src="./sounds/openhat.wav"></audio>
+        <audio id="sound-5" data-key="71" src="./sounds/boom.wav"></audio>
+        <audio id="sound-6" data-key="72" src="./sounds/ride.wav"></audio>
+        <audio id="sound-7" data-key="74" src="./sounds/snare.wav"></audio>
+        <audio id="sound-8" data-key="75" src="./sounds/tom.wav"></audio>
+        <audio id="sound-9" data-key="76" src="./sounds/tink.wav"></audio>
+      </div>
     </div>
 
-    <div class="sounds">
-      <audio id="sound-1" data-key="65" src="./sounds/clap.wav"></audio>
-      <audio id="sound-2" data-key="83" src="./sounds/hihat.wav"></audio>
-      <audio id="sound-3" data-key="32" src="./sounds/kick.wav"></audio>
-      <audio id="sound-4" data-key="70" src="./sounds/openhat.wav"></audio>
-      <audio id="sound-5" data-key="71" src="./sounds/boom.wav"></audio>
-      <audio id="sound-6" data-key="72" src="./sounds/ride.wav"></audio>
-      <audio id="sound-7" data-key="74" src="./sounds/snare.wav"></audio>
-      <audio id="sound-8" data-key="75" src="./sounds/tom.wav"></audio>
-      <audio id="sound-9" data-key="76" src="./sounds/tink.wav"></audio>
-    </div>
     <script src="./script.js"></script>
   </body>
 </html>
