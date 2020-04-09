@@ -43,7 +43,7 @@ keys.forEach((key) => key.addEventListener("transitionend", removeStyle));
 window.addEventListener("keydown", soundOn);
 
 for (let i = 0; i < keys.length; i++) {
-  keys[i].addEventListener("click", clickSound);
+  keys[i].addEventListener("mousedown", clickSound);
   function clickSound() {
     const keyIndex = i;
     const key = document.getElementById(keys[i].id);
