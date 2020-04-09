@@ -10,6 +10,8 @@ header {
     text-align: center;
 }
 
+.main {}
+
 header h1 {
     color: #f5f5f5;
     margin-top: 8%;
@@ -64,10 +66,10 @@ button {
 }
 
 @media(max-width:700px) {
-    body {}
+    header {}
     header h1 {
         font-size: 40px;
-        margin-top: 30%;
+        margin-top: 12%;
     }
     header h2 {
         font-size: 18px;
@@ -76,7 +78,7 @@ button {
         margin-top: 5%;
     }
     .part {
-        width: 128px;
-        margin: 0px 5px 10px 0px;
+        width: 120px;
+        margin: 5px 5px 10px 0px;
     }
 }
