@@ -64,10 +64,12 @@ button {
 }
 
 @media(max-width:700px) {
-    header {}
+    body {
+        background-color: blue;
+    }
     header h1 {
         font-size: 40px;
-        margin-top: 12%;
+        margin-top: 30%;
     }
     header h2 {
         font-size: 18px;
