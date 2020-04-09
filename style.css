@@ -3,8 +3,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    text-align: center;
     font-family: 'Do Hyeon', sans-serif;
+}
+
+header {
+    text-align: center;
 }
 
 header h1 {
@@ -22,26 +25,23 @@ header h2 {
 }
 
 .parts {
-    display: inline-flex;
     margin-top: 2%;
+    text-align: center;
 }
 
-.part {}
-
-button {
-    border: 3px solid;
-    margin-right: 15px;
-    padding: 15px;
+.part {
+    border: 2px solid;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px;
     width: 140px;
     color: whitesmoke;
-    border-radius: 5px;
     font-weight: bold;
     transition: all .07s;
+}
+
+button {
     background: none;
-    -ms-touch-action: manipulation;
-    /* IE10  */
-    touch-action: manipulation;
-    /* IE11+ */
 }
 
 .playing {
@@ -50,9 +50,10 @@ button {
     box-shadow: 0 0 10px #817777;
 }
 
-button kbd {
-    font-size: 40px;
+.part kbd {
+    font-size: 37px;
     padding-bottom: 2px;
+    background: transparent;
     /* margin: 0px auto; */
 }
 
@@ -60,4 +61,22 @@ button kbd {
     font-size: 17px;
     color: #ffd700;
     font-weight: 500;
+}
+
+@media(max-width:700px) {
+    header {}
+    header h1 {
+        font-size: 40px;
+        margin-top: 12%;
+    }
+    header h2 {
+        font-size: 18px;
+    }
+    .parts {
+        margin-top: 5%;
+    }
+    .part {
+        width: 120px;
+        margin: 0px 5px 10px 0px;
+    }
 }
