@@ -1,8 +1,9 @@
 body {
-    background-image: url(./images/background.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(./images/background.jpg); */
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background-color: black;
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -64,9 +65,7 @@ button {
 }
 
 @media(max-width:700px) {
-    body {
-        background-color: blue;
-    }
+    body {}
     header h1 {
         font-size: 40px;
         margin-top: 30%;
